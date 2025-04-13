@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-@ds!5ymuommq2$9xvfw23)hy)8mk=+xf%#j3fj%v&6@1_62je^'
+=======
+SECRET_KEY = 'django-insecure-te^cvog7c-7%68jw^&6%9!4#bm%$4()iz-g)r42flgo(+4boge'
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,9 +38,12 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+<<<<<<< HEAD
 MEDIA_URL = '/media/'  # URL, pod którym będą dostępne pliki w przeglądarkach
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Ścieżka na dysku do folderu, gdzie pliki będą przechowywane
 
+=======
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,6 +69,7 @@ ROOT_URLCONF = 'sklep_studia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [
             BASE_DIR / 'templates',  # Możesz dodać tę linię, jeśli masz wspólny folder templates w projekcie
         ],
@@ -66,6 +77,12 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
+=======
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -74,7 +91,10 @@ TEMPLATES = [
     },
 ]
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
 WSGI_APPLICATION = 'sklep_studia.wsgi.application'
 
 
@@ -123,6 +143,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -130,6 +151,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"  # Gdzie pliki statyczne będą przechowywane w produkcji
+=======
+STATIC_URL = 'static/'
+>>>>>>> b771156e4ff712a61c31eaea92eaea540009bd72
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
