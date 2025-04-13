@@ -1,0 +1,33 @@
+<!-- C:\sklep\sklep_studia\products\templates\products\home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    
+    <!-- Ładuj pliki statyczne -->
+    {% load static %}
+    
+    <!-- Link do pliku CSS -->
+    <link rel="stylesheet" href="{% static 'products/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Products</h1>
+        <ul>
+            {% for product in products %}
+            <div class="product">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+                <p>Cena: {{ product.price }} zł</p>
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% endif %}
+            </div>
+        {% endfor %}        
+        </ul>
+    </div>
+</body>
+</html>
